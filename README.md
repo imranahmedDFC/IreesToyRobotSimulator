@@ -20,7 +20,10 @@ User inputs are validated and return appropriate object types or error messages 
 Unit tests are created using MSTest framework. The test project is called ToyRobotSimulator.Test which can be found <a href="https://github.com/imranahmedDFC/IreesToyRobotSimulator/tree/master/ToyRobotSimulator.Test">here<a/>
 
 <h3> Running Robot Simulator Application </h3>
-There is a single executable file which runs the application and it can be run by double clicking it. The above mention instructions or on screen instructions can be followed to type the user input commands. The executable file is located here.
+There is a single executable file which runs the application and it can be run by double clicking it. The above mention instructions or on screen instructions can be followed to type the user input commands. The executable file is located <a href="https://github.com/imranahmedDFC/IreesToyRobotSimulator/blob/master/ToyRobotSimulator.exe">here.</a>
   
 <h3> Supported Operating Systems </h3>
 The simulator application has been developed on 64-bit Windows operating system and it should run Windows environment.
+
+<h3> CD/CI Pipeline </h3>
+Continuous Integration is been setup using GitHub Action Workflow. Whenever there is a new commit to the repository the workflow will be triggered which will check the build and run all test cases, the workflow file is located <a href="https://github.com/imranahmedDFC/IreesToyRobotSimulator/blob/master/.github/workflows/ToyRobotSimulator.yml"> here.</a>

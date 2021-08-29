@@ -22,12 +22,12 @@ namespace ToyRobotSimulator
                      Welcome! 
 
                   1: Place the toy on a 5 x 5 grid
-                     using the following command: 
+                     by typing the following command: 
 
                      PLACE X,Y,F (Where X and Y are integers and F 
                      must be either NORTH, SOUTH, EAST or WEST)
 
-                  2: When the toy is placed, have at go at using
+                  2: When the toy is placed, move it around by typing
                      the following commands.
                 
                      REPORT – Shows the current status of the toy. 

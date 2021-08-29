@@ -37,8 +37,7 @@ namespace ToyRobotSimulator.Test
 
             // act and assert
             var exception = Assert.ThrowsException<ArgumentException>(delegate 
-            { inputParser.ParseCommand(rawInput); });
-            //Assert That(exception.Message, Is.EqualTo("Sorry, your command was not recognised. Please try again using the following format: PLACE X,Y,F|MOVE|LEFT|RIGHT|REPORT"));
+            { inputParser.ParseCommand(rawInput); });            
             Assert.AreEqual("The command was not recognised. Please try again using the following format: PLACE X,Y,F|MOVE|LEFT|RIGHT|REPORT", exception.Message);
         }
 
@@ -74,7 +73,6 @@ namespace ToyRobotSimulator.Test
             // act and assert
             var exception = Assert.ThrowsException<ArgumentException>(delegate
             { var placeCommandParameter = inputParser.ParseCommandParameter(rawInput); });
-            //Assert.That(exception.Message, Is.EqualTo("Incomplete command. Please ensure that the PLACE command is using format: PLACE X,Y,F"));
             Assert.AreEqual("Incomplete command. Please ensure that the PLACE command is using format: PLACE X,Y,F", exception.Message);
         }
 
@@ -90,7 +88,6 @@ namespace ToyRobotSimulator.Test
 
             // act and assert
             var exception = Assert.ThrowsException<ArgumentException>(delegate { paramParser.ParseParameters(rawInput); });
-            //Assert.That(exception.Message, Is.EqualTo("Invalid direction. Please select from one of the following directions: NORTH|EAST|SOUTH|WEST"));
             Assert.AreEqual("Invalid direction. Please select from one of the following directions: NORTH|EAST|SOUTH|WEST", exception.Message);
         }
 
@@ -106,7 +103,6 @@ namespace ToyRobotSimulator.Test
 
             // act and assert
             var exception = Assert.ThrowsException<ArgumentException>(delegate { paramParser.ParseParameters(rawInput); });
-            //Assert.That(exception.Message, Is.EqualTo("Incomplete command. Please ensure that the PLACE command is using format: PLACE X,Y,F"));
             Assert.AreEqual("Incomplete command. Please ensure that the PLACE command is using format: PLACE X,Y,F", exception.Message);
         }
     }

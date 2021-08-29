@@ -1,4 +1,4 @@
-# IreesToyRobotSimulator
+# Irees Toy Robot Simulator
 <b> Toy Robot Code Challenge </b>
 
 This toy robot simulator is a C# .Net solution which moves the toy on a square table top, of dimensions 5 units x 5 units. There are no other obstructions on the table surface. The robot is free to roam around the surface of the table and prevented from falling to destruction. 

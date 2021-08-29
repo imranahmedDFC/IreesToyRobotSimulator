@@ -7,15 +7,20 @@ Any movement that would result in the robot falling from the table is ignored, h
 <h3> Instructions and Design Patterns </h3>
 User inputs are validated and return appropriate object types or error messages through classes, and the class methods are unit tested before being set to work with the rest of the application. The following commands are read by the application:
 
-  PLACE X,Y,F 
-  MOVE  
-  LEFT  
-  RIGHT  
-  REPORT  
-  
-PLACE X,Y,FACING : This puts the toy on the table in position X,Y and facing NORTH, SOUTH, EAST or WEST. If the toy is already placed, issuing another valid PLACE command will place the toy in the newly specified location.
-MOVE : This moves the toy one unit forward in the direction it is currently facing.
-LEFT : This rotates the toy 90 degrees to the left (i.e. counter-clockwise) without changing the position.
-RIGHT : This rotates toy 90 degrees to the right (i.e. clockwise) without changing the position.
-REPORT : This announces the X,Y and direction of the toy by printing to the console.
+<ul>
+  <li>PLACE X,Y,FACING : This puts the toy on the table in position X,Y and facing NORTH, SOUTH, EAST or WEST. If the toy is already placed, issuing another valid PLACE command will place the toy in the newly specified location.</li>
+  <li>MOVE : This moves the toy one unit forward in the direction it is currently facing.</li>
+  <li>LEFT : This rotates the toy 90 degrees to the left (i.e. counter-clockwise) without changing the position.</li>
+  <li>RIGHT : This rotates toy 90 degrees to the right (i.e. clockwise) without changing the position. </li>
+  <li>REPORT : This announces the X,Y and direction of the toy by printing to the console. </li>
+</ul>
 
+
+<h3> Testing Framework </h3>
+Unit tests are created using MSTest framework. The test project is called ToyRobotSimulator.Test which can be found <a href="https://github.com/imranahmedDFC/IreesToyRobotSimulator/tree/master/ToyRobotSimulator.Test">here<a/>
+
+<h3> Running Robot Simulator Application </h3>
+There is a single executable file which runs the application and it can be run by double clicking it. The above mention instructions or on screen instructions can be followed to type the user input commands. The executable file is located here.
+  
+<h3> Supported Operating Systems </h3>
+The simulator application has been developed on 64-bit Windows operating system and it should run Windows environment.
